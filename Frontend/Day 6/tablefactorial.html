@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Factorial Table</h2>
+    Enter Number <input type="text" name="" id="n">
+    <br><br>
+    <button onclick="call()">Fact</button>
+    <br>
+    <div id="output">
+
+    </div>
+
+    <script>
+        const call= () =>
+        {
+
+        let num=parseInt(document.getElementById("n").value);
+        let result="<table border='1' width='50%' >"
+           result+="<tr><th>Number</th><th>Factorial</th></tr>";
+        let i,k;
+        for(k=1;k<=num;k++)
+    {
+        let fact=1;
+        for(i=1;i<=k;i++)
+    {
+        fact=fact*i;
+    }
+    result=result+"<tr><td>"+k+"</td><td>"+fact+"</td></tr>";
+    }
+    result+="</table>";
+    document.getElementById("output").innerHTML=result;
+}
+    </script>
+</body>
+</html>
