@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function my(){
+         var b=document.getElementById("n1").value;
+         result="";
+         for(let i=1;i<=b;i++){
+            for(let j=1;j<=b-i+1;j++){
+               result+=j+" ";
+            }
+            result+=" "+"<br>";
+         }
+         document.getElementById("myResult").innerHTML=result;
+        }
+    </script>
+</head>
+<body>
+   <input type="text" name="" id="n1">
+   <button onclick="my()">Click</button>
+   <div id="myResult"></div>
+   
+</body>
+</html>

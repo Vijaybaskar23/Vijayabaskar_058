@@ -1,0 +1,26 @@
+<h1>Welcome to Angular</h1>
+<br>
+<b>
+    Name:{{name}};
+    <br>Age:{{age}};
+    <br>Email:<input type="text" value="{{email}}"/>
+    <h1>property binding</h1>
+
+    <br>Name:<input type="text" [value]="name">
+    <br>Email:<input type="text" [value]="email">
+    <br>Age:<input type="text" [value]="age">
+ <br><br>
+     <h1>Event</h1>
+     <button (click)="changename()">change</button>
+     <br>
+     <button (click)="changeage()">change</button>
+     <br>
+     <button (click)="changeemail()">change</button>
+     <br>
+     <img [src]="imagepath" width="1000px" height="1000px"/>
+     <br><br>
+     <button (click)="changeimage()">change image</button>
+
+    
+
+</b>
