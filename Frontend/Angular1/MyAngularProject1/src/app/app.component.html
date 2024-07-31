@@ -1,26 +1,22 @@
-<h1>Welcome to Angular</h1>
+<h1>Structural and Attractive Directivies Example</h1>
 <br>
-<b>
-    Name:{{name}};
-    <br>Age:{{age}};
-    <br>Email:<input type="text" value="{{email}}"/>
-    <h1>property binding</h1>
+<button (click) ="changeflag()"> change   </button>
 
-    <br>Name:<input type="text" [value]="name">
-    <br>Email:<input type="text" [value]="email">
-    <br>Age:<input type="text" [value]="age">
- <br><br>
-     <h1>Event</h1>
-     <button (click)="changename()">change</button>
-     <br>
-     <button (click)="changeage()">change</button>
-     <br>
-     <button (click)="changeemail()">change</button>
-     <br>
-     <img [src]="imagepath" width="1000px" height="1000px"/>
-     <br><br>
-     <button (click)="changeimage()">change image</button>
+<div *ngIf="flag" [ndStyle]="myStyle">
+    <br>
+    <ul>
+        <li *ngFor="let vec of vehicles" (click)="setSelectedItem(vec)">{{vec}}</li>
+    </ul>
+    <br>
+    <b>You have selected:{{selectedVehicles}}</b>
+    <br>
+    <div [ngSwitch]="selectVehicle">
+        <font color="green" *ngSwitchCase="'Twowheeler'">Bike</font>
+        <font color="green" *ngSwitchCase="'Twowheeler'">Auto</font>
+        <font color="green" *ngSwitchCase="'Twowheeler'">Car</font>
+        <font color="green" *ngSwitchCase>invalid</font>
 
-    
-
-</b>
+    </div>
+</div>
+<br>
+<button (click)>"changeStyle()">Change Style</button>
