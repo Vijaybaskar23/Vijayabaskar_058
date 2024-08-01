@@ -1,0 +1,49 @@
+.header h3{
+    border:2px solid black  ;
+    width: 50%px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:x-large;
+    background: #ececec;
+
+}
+.Content{
+    border: 2px solid black;
+    height: 350px;
+    width: 600px;
+    padding-top: 90px;
+    position: absolute;
+    top: 19.5%;
+    padding-left: 20px;
+    background: #cecece;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+}
+.box{
+    border: 2px solid black;
+    width: 29.7%;
+    height: 33.5%;
+    padding: 10%;
+    position: absolute;
+    left: 49.3%;
+    top: 19.4%;
+    background: #cecece;
+}
+.list{
+    display: flex;
+    flex-direction:column;
+    row-gap: 20px;
+    position: absolute;
+    bottom: 150px;
+}
+.btn button{
+    background: rgb(177, 178, 179);
+    color: black;
+    border-radius: 12px;
+    padding: 6px;
+}
+

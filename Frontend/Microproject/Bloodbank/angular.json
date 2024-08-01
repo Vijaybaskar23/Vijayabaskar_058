@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "vijay1": {
+    "Bloodbank": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/vijay1",
+            "outputPath": "dist/bloodbank",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "vijay1:build:production"
+              "buildTarget": "Bloodbank:build:production"
             },
             "development": {
-              "buildTarget": "vijay1:build:development"
+              "buildTarget": "Bloodbank:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -109,6 +109,6 @@
     }
   },
   "cli": {
-    "analytics": "1b988d24-779b-4fa3-9586-8ea546e97f52"
+    "analytics": "6fb72820-30c3-4a60-8e8b-477fb95ea6a3"
   }
 }
